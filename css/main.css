@@ -118,14 +118,18 @@ html {
 a {text-decoration: none;}
 a:hover {text-decoration: underline;}
 
+.bg1 {background: url(../img/bg1.jpg) 0 1090px no-repeat;}
+.bg2 {background: url(../img/bg2.jpg) 100% 1090px no-repeat;}
 .centered {text-align: center;}
 
-.container {
-  width: 100%; 
-  max-width: 1920px; 
-  min-width: 1000px; 
+.container {   
   margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1920px;
+  width: 100%;
 }
+
+.home_content {}
 
 .main_head {
   min-height: 216px; 
@@ -277,18 +281,79 @@ a:hover {text-decoration: underline;}
 .ru a {background: url(../img/ru.png) 100% 0 no-repeat;}
 .es a {background: url(../img/es.png) 100% 0 no-repeat;}
 
-.slider {padding: 0 30px;}
+.slider {padding: 0 30px; position: relative; overflow: hidden; width: 100%;}
+
+
+.section_tiles {text-align: center;margin: 0 60px;}
+.single_tile {
+  position: relative;
+  margin: 0 3% 50px;
+  display: inline-block;
+  text-align: left;
+}
+.single_tile img {
+  display: block;
+  border-radius: 7px;
+}
+.tile_text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 214px;
+  height: 203px;
+  padding: 20px 16px 0 16px;
+  background: rgba(255,255,255,0.7);
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #1a417e;
+}
+.tile_text:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: -17px;
+  width: 39px;
+  height: 235px;
+  background: url(../img/stick.png) 100% 0 no-repeat;  
+}
+.tile_text h4 {
+  font-size: 24px;
+  line-height: 20px;
+  color: #cda053;
+  margin: 0 0 10px;
+  font-weight: normal;
+  border-bottom: 1px solid;
+  padding-bottom: 6px;
+}
+.sec_info {}
+.b_button {
+  background: #1a417e;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 7px;
+  display: inline-block;
+  position: absolute;
+}
+
+.single_tile .b_button {
+  position: absolute;
+  bottom: 19px;
+  left: 16px;
+}
 
 
 
 .main_footer {
   font-size: 14px; 
   background: #f6f7f9;
+  min-width: 1000px;
 }
 
 .main_footer .container {
-  padding: 0 0 20px; 
+  padding: 0 0 20px;
   max-width: 980px;
+  min-width: 0; 
+  width: auto;
 }
 
 .main_footer h4 {font-size: 18px;}
@@ -429,6 +494,11 @@ a:hover {text-decoration: underline;}
     .h_button {left: 30%;}
 }
 
+@media only screen and (min-width: 1170px) {
+.single_tile {
+    margin: 0 6% 50px;}
+}
+
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
@@ -507,3 +577,4 @@ a:hover {text-decoration: underline;}
         page-break-after: avoid;
     }
 }
+
