@@ -14,6 +14,7 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/jquery.bxslider.css">
+		<link rel="stylesheet" href="css/fresco/fresco.css"/>
 		<link rel="stylesheet" href="css/main.css">
 
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -31,7 +32,13 @@
 						<nav class="main_navigation">
 							<ul>
 								<li class="active"><a href="#">HOME</a></li>
-								<li><a href="#">THE HOTEL</a></li>
+								<li><a href="#">THE HOTEL</a>
+									<ul>
+										<li><a href="#">Main Building</a></li>
+										<li><a href="#">Annex Building</a></li>
+										<li><a href="#">Villa</a></li>
+									</ul>
+								</li>
 								<li><a href="#">News</a></li>
 								<li><a href="#">Look at us</a></li>
 								<li><a href="#">Awards</a></li>
@@ -43,7 +50,7 @@
 						<a href="#" class="h_button book">Забронировать</a>
 						<div class="weather">
 							<div class="where"><strong>Antalya</strong>, 25th July</div>
-							<time>12:00 am</time>
+							<time datetime="12:00">12:00 am</time>
 							<div class="temp">31&deg;</div>
 						</div>
 						<ul class="social">
@@ -64,10 +71,9 @@
 					<div class="home_content">
 						<div class="slider">
 							<ul class="bxslider">
-								<li><img src="img/img1.jpg"></li>
-								<li><img src="img/img2.jpg"></li>
-								<li><img src="img/img3.jpg"></li>
-								<li><img src="img/img4.jpg"></li>
+								<li><img src="img/img1.jpg" alt=""></li>
+								<li><img src="img/img2.jpg" alt=""></li>
+								<li><img src="img/img3.jpg" alt=""></li>
 							</ul>
 						</div>
 						<div class="section_tiles clearfix">
@@ -127,6 +133,7 @@
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 		<script src="js/plugins.js"></script>
 		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/fresco.js"></script>
 		<script src="js/main.js"></script>
 
 	</body>
