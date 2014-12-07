@@ -368,6 +368,8 @@ h2 {font-size: 16px;}
   position: absolute;
 }
 
+.b_button:hover {text-decoration: none; background: #2f528f;}
+
 .single_tile .b_button {
   position: absolute;
   bottom: 19px;
